@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use PhpParser\Node\Stmt\Echo_;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/posts', function () {
-    return view('welcome');
+    echo ("Listado de posts");
 });
